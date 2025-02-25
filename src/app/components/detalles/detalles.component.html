@@ -1,0 +1,10 @@
+<div class="product-detail">
+  <h3>{{ product.name }}</h3>
+  <img [src]="product.imagen" alt="{{ product.name }}" class="imagen" />
+  <p><strong>Precio:</strong> ${{ product.precio }}</p>
+  <p>
+    <strong>Disponibilidad:</strong>
+    {{ product.disponibilidad ? "Disponible" : "Agotado" }}
+  </p>
+  <p><strong>Oferta:</strong> {{ product.oferta ? "Sí" : "No" }}</p>
+</div>
